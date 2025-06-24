@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">我是段落<p>
+        <button onclick="btnClick()">click</button>
+    <script>
+        // 建立函式等待執行
+        // {}叫做區塊
+        function btnClick(){
+        document.getElementById("demo").innerHTML="hellow";
+        }
+        
+
+        // 單行註解ctrl+/
+        //3+2=5
+        document.write("<br>");
+        document.write("3+2=");
+        document.write(3+2);
+        document.write("<br>");
+
+        /* 
+        合併 加號的特性
+        加號只要有一邊是文字型態就會變成串接
+        */   
+        document.write("3+2=" + (3+2));
+
+        // 區塊多行註解:/*...*/
+        /*
+        document.write("3+2=");
+        document.write(3+2);
+        document.write("3+2=");
+        document.write(3+2);
+        */
+
+
+    </script>
+    
+</body>
+</html>
