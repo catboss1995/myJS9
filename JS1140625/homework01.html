@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0625homework01</title>
+</head>
+
+<body>
+    <script>
+        /*
+        內定帳號="admin"
+        內定密碼="1234"
+    
+        帳號：正確 + 密碼：正確 => 顯示「帳密正確」
+        帳號：正確 + 密碼：錯誤 => 顯示「密碼錯誤」
+        帳號：錯誤 + 密碼：正確 => 顯示「帳號錯誤」
+        帳號：錯誤 + 密碼：錯誤 => 顯示「帳密都錯」
+        */
+
+        /* ----- 作答 -----*/
+        var Account = "admin";
+        var password = "1234";
+
+        if (Account === "admin" && password === "1234") {
+            console.log("帳密正確");
+            alert("帳密正確");
+        } else if (Account === "admin" && password !== "1234") {
+            console.log("密碼錯誤");
+            alert("密碼錯誤");
+        } else if (Account !== "admin" && password === "1234") {
+            console.log("帳號錯誤");
+            alert("帳號錯誤");
+        } else if (Account !== "admin" && password !== "1234") {
+            console.log("帳密都錯");
+            alert("帳密都錯");
+        }
+
+    </script>
+
+</body>
+
+</html>

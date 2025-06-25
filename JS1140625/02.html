@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 四則運算
+        var a = 5;
+        var b = 3;
+
+        /* ---------階段1(雛形)--------- */
+        // 加
+        console.log(`${a}+${b}=${a + b}`);
+        // 減
+        console.log(`${a}-${b}=${a - b}`);      
+        // 乘
+        console.log(`${a}*${b}=${a * b}`);
+        // 除
+        console.log(`${a}/${b}=${a / b}`);
+        // 取餘數
+        console.log(`${a}%${b}=${a % b}`);
+        // 次方數
+        console.log(`${a}**${b}=${a ** b}`);
+
+        /* ---------階段2(if敘述)--------- */
+        
+        // 宣告一個存放運算符號的變數
+        var op = "+";
+        
+        // 加
+        if (op == "+"){
+        console.log(`${a}+${b}=${a+b}`);
+        }
+        console.log(`${a}+${b}=${a + b}`);
+        // 減
+        if (op=="-"){
+        console.log(`${a}-${b}=${a - b}`);
+        }
+        // 乘
+        if (op == "*"){        
+        console.log(`${a}*${b}=${a * b}`);
+        }
+        // 除
+        if (op == "/"){ 
+        console.log(`${a}/${b}=${a / b}`);
+        }
+        // 取餘數
+        if (op == "%"){        
+        console.log(`${a}%${b}=${a % b}`);
+        }
+        // 次方數
+        if (op == "**"){
+        console.log(`${a}**${b}=${a ** b}`);   
+        }
+
+        /* ---------階段3(if...else敘述)--------- */
+        
+        // 宣告一個存放運算符號的變數
+        var op = "-";
+
+        if (op == "+"){
+        // 加
+        console.log(`${a}+${b}=${a+b}`);
+        }else if (op == "-"){
+        // 減
+        console.log(`${a}-${b}=${a - b}`);
+        }else if (op == "*"){        
+        // 乘       
+        console.log(`${a}*${b}=${a * b}`);
+        }else if (op == "/"){ 
+        // 除
+        console.log(`${a}/${b}=${a / b}`);
+        }else if (op == "%"){ 
+        // 取餘數       
+        console.log(`${a}%${b}=${a % b}`);
+        }else if (op == "**"){
+        // 次方數
+        console.log(`${a}**${b}=${a ** b}`);   
+        }else{
+        /*比對結果不存在需多加附註*/
+        console.log("運算式不存在"+op);
+        }
+
+        /* ---------階段4(if...else if...else敘述)--------- */
+        
+        // 宣告一個存放運算符號的變數
+        var op = "-";
+
+        if (op == "+"){
+        // 加
+        console.log(`${a}+${b}=${a+b}`);
+        }else if (op == "-"){
+        // 減
+        console.log(`${a}-${b}=${a - b}`);
+        }else if (op == "*"){        
+        // 乘       
+        console.log(`${a}*${b}=${a * b}`);
+        }else if (op == "/"){ 
+        // 除
+        console.log(`${a}/${b}=${a / b}`);
+        }else if (op == "%"){ 
+        // 取餘數       
+        console.log(`${a}%${b}=${a % b}`);
+        }else if (op == "**"){
+        // 次方數
+        console.log(`${a}**${b}=${a ** b}`);   
+        }else{
+        /*比對結果不存在需多加附註*/
+        console.log("運算式不存在"+op);
+        }
+    </script>
+</body>
+
+</html>
